@@ -1,0 +1,27 @@
+
+`	java:S112l"FDefine and throw a dedicated exception instead of using a generic one.(ºÄßÈüÿÿÿÿ
+[	java:S112†"FDefine and throw a dedicated exception instead of using a generic one.(âİÓf
+0
+java:S1220""Move this file to a named package.
+E	java:S106T"+Replace this use of System.out by a logger.(äÌÙäÿÿÿÿÿ
+@	java:S106b"+Replace this use of System.out by a logger.(§Ë†ü
+@	java:S106p"+Replace this use of System.out by a logger.(á†«Ó
+A	java:S106Š"+Replace this use of System.out by a logger.(¥ŸÏ
+G
+java:S1128"1Remove this unused import 'com.google.gson.Gson'.(–§
+M
+java:S1128"7Remove this unused import 'com.google.gson.JsonObject'.(µÊ´½
+c
+java:S1128!"MRemove this unused import 'com.hedera.hashgraph.sdk.PrecheckStatusException'.(­¥ŠÑ
+g
+java:S1128#"LRemove this unused import 'com.hedera.hashgraph.sdk.ReceiptStatusException'.(Ò¼°¹ûÿÿÿÿ
+K
+java:S1128("0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ
+F
+java:S1128)"0Remove this unused import 'java.io.InputStream'.(¹»º
+L
+java:S1128*"6Remove this unused import 'java.io.InputStreamReader'.(ãˆÎÉ
+T
+java:S1128+">Remove this unused import 'java.nio.charset.StandardCharsets'.(ï˜ŞÛ
+X
+java:S1128-"BRemove this unused import 'java.util.concurrent.TimeoutException'.(£‡Ì

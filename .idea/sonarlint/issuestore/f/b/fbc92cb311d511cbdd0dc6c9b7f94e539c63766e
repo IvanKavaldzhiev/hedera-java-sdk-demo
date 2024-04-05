@@ -1,0 +1,20 @@
+
+n
+java:S1192]"LDefine a constant instead of duplicating this literal " balance = " 4 times.(•²Ñ¼øÿÿÿÿ8‘‹½úé1
+L	java:S106*"+Replace this use of System.out by a logger.(ğÑşëüÿÿÿÿ8š‹½úé1
+L	java:S106+"+Replace this use of System.out by a logger.(Êêíûûÿÿÿÿ8›‹½úé1
+G	java:S1065"+Replace this use of System.out by a logger.(Şôô°8 ‹½úé1
+L	java:S1069"+Replace this use of System.out by a logger.(¼ºÓ£ıÿÿÿÿ8¢‹½úé1
+G	java:S106@"+Replace this use of System.out by a logger.(àöÜ¤8£‹½úé1
+L	java:S106A"+Replace this use of System.out by a logger.(ñãé¬ÿÿÿÿÿ8£‹½úé1
+L	java:S106K"+Replace this use of System.out by a logger.(¨…Úüùÿÿÿÿ8£‹½úé1
+G	java:S106O"+Replace this use of System.out by a logger.(ŠúÊ8¤‹½úé1
+L	java:S106]"+Replace this use of System.out by a logger.(•²Ñ¼øÿÿÿÿ8ª‹½úé1
+L	java:S106^"+Replace this use of System.out by a logger.(¼çûìÿÿÿÿÿ8ª‹½úé1
+G	java:S106p"+Replace this use of System.out by a logger.(ş¹Ö½8®‹½úé1
+W
+java:S6213r":Rename this variable to not match a restricted identifier.(úÉ±İ8¯‹½úé1
+G	java:S106t"+Replace this use of System.out by a logger.(ÙØèÅ8°‹½úé1
+M	java:S106€"+Replace this use of System.out by a logger.(àù‚øşÿÿÿÿ8±‹½úé1
+M	java:S106"+Replace this use of System.out by a logger.(àĞ»àıÿÿÿÿ8±‹½úé1
+M	java:S106‚"+Replace this use of System.out by a logger.(Ü¾×®úÿÿÿÿ8±‹½úé1

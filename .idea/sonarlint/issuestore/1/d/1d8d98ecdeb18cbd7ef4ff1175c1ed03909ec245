@@ -1,0 +1,22 @@
+
+g
+java:S1192["LDefine a constant instead of duplicating this literal " balance = " 4 times.(•²Ñ¼øÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+E	java:S106("+Replace this use of System.out by a logger.(™ŸĞÿùÿÿÿÿ
+E	java:S106)"+Replace this use of System.out by a logger.(Êêíûûÿÿÿÿ
+@	java:S1063"+Replace this use of System.out by a logger.(Şôô°
+E	java:S1067"+Replace this use of System.out by a logger.(¼ºÓ£ıÿÿÿÿ
+@	java:S106>"+Replace this use of System.out by a logger.(àöÜ¤
+E	java:S106?"+Replace this use of System.out by a logger.(ñãé¬ÿÿÿÿÿ
+E	java:S106I"+Replace this use of System.out by a logger.(¨…Úüùÿÿÿÿ
+@	java:S106M"+Replace this use of System.out by a logger.(ŠúÊ
+E	java:S106["+Replace this use of System.out by a logger.(•²Ñ¼øÿÿÿÿ
+E	java:S106\"+Replace this use of System.out by a logger.(¼çûìÿÿÿÿÿ
+@	java:S106n"+Replace this use of System.out by a logger.(ş¹Ö½
+P
+java:S6213p":Rename this variable to not match a restricted identifier.(úÉ±İ
+@	java:S106r"+Replace this use of System.out by a logger.(ÙØèÅ
+E	java:S106~"+Replace this use of System.out by a logger.(àù‚øşÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(àĞ»àıÿÿÿÿ
+F	java:S106€"+Replace this use of System.out by a logger.(Ü¾×®úÿÿÿÿ

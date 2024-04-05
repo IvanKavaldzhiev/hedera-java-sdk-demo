@@ -1,0 +1,20 @@
+
+”
+java:S1192]"LDefine a constant instead of duplicating this literal " balance = " 4 times.(•²Ñ¼øÿÿÿÿ8‘‹½úé1J$fcd63acb-9703-4db4-aef8-6b3204e2d2d3
+r	java:S106*"+Replace this use of System.out by a logger.(ğÑşëüÿÿÿÿ8š‹½úé1J$67efe4de-47bf-46e6-9226-1b81ee464788
+r	java:S106+"+Replace this use of System.out by a logger.(Êêíûûÿÿÿÿ8›‹½úé1J$3ff7deea-6c63-4380-892d-083a0a83a97f
+m	java:S1065"+Replace this use of System.out by a logger.(Şôô°8 ‹½úé1J$5aa63a9a-7968-4b7e-8e40-5be331b7db97
+r	java:S1069"+Replace this use of System.out by a logger.(¼ºÓ£ıÿÿÿÿ8¢‹½úé1J$31092925-e179-4cdc-b8df-8fb8ffc85cfe
+m	java:S106@"+Replace this use of System.out by a logger.(àöÜ¤8£‹½úé1J$733891d0-f2e2-4780-8b63-58fb86bcfa4f
+r	java:S106A"+Replace this use of System.out by a logger.(ñãé¬ÿÿÿÿÿ8£‹½úé1J$9c168821-aa58-4591-9ecf-a3873d7aa152
+r	java:S106K"+Replace this use of System.out by a logger.(¨…Úüùÿÿÿÿ8£‹½úé1J$ccccf82b-27b9-46d8-af5f-3848f099ae51
+m	java:S106O"+Replace this use of System.out by a logger.(ŠúÊ8¤‹½úé1J$cec2e6de-dc51-4eb1-99a1-acd785ca1b22
+r	java:S106]"+Replace this use of System.out by a logger.(•²Ñ¼øÿÿÿÿ8ª‹½úé1J$52f9a93d-a3bb-43bb-b976-dd8ceaaa8f5c
+r	java:S106^"+Replace this use of System.out by a logger.(¼çûìÿÿÿÿÿ8ª‹½úé1J$d4b84611-8247-47b5-bc52-72bb327f7b0f
+m	java:S106p"+Replace this use of System.out by a logger.(ş¹Ö½8®‹½úé1J$1248a392-6cba-4604-95d5-c6878ae9a731
+}
+java:S6213r":Rename this variable to not match a restricted identifier.(úÉ±İ8¯‹½úé1J$b5943f6a-2b93-4ea0-859b-c262682eeb86
+m	java:S106t"+Replace this use of System.out by a logger.(ÙØèÅ8°‹½úé1J$93889d46-ff23-4c08-a80b-a30ac11bdff1
+s	java:S106€"+Replace this use of System.out by a logger.(àù‚øşÿÿÿÿ8±‹½úé1J$d383e491-7413-431b-8c76-26cf627b00f9
+s	java:S106"+Replace this use of System.out by a logger.(àĞ»àıÿÿÿÿ8±‹½úé1J$abce8ccd-0d93-4b21-b951-4d8962c47dfd
+s	java:S106‚"+Replace this use of System.out by a logger.(Ü¾×®úÿÿÿÿ8±‹½úé1J$af02c67e-0834-487d-9664-02e59f82326a
