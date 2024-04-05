@@ -1,3 +1,5 @@
+package com.hedera.node.demo;
+
 import com.hedera.hashgraph.sdk.AccountId;
 import com.hedera.hashgraph.sdk.Client;
 import java.util.HashMap;

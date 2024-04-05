@@ -16,14 +16,16 @@ import com.hedera.hashgraph.sdk.TransferTransaction;
 import io.github.cdimascio.dotenv.Dotenv;
 import java.util.Objects;
 import java.util.concurrent.TimeoutException;
+import lombok.CustomLog;
 
-public class CreateAndTransferHbarsDemo {
+@CustomLog
+public class CreateAccountsAndTransferHbarsDemo {
 
     private static final AccountId OPERATOR_ID = AccountId.fromString(Objects.requireNonNull(Dotenv.load().get("OPERATOR_ID")));
     private static final PrivateKey OPERATOR_KEY = PrivateKey.fromString(Objects.requireNonNull(Dotenv.load().get("OPERATOR_KEY")));
     private static final String HEDERA_NETWORK = Dotenv.load().get("HEDERA_NETWORK", "testnet");
 
-    private CreateAndTransferHbarsDemo() {
+    private CreateAccountsAndTransferHbarsDemo() {
     }
 
     public static void main(String[] args)
@@ -39,8 +41,8 @@ public class CreateAndTransferHbarsDemo {
         PrivateKey firstAccountKey = PrivateKey.generateED25519();
         PublicKey firstAccountPublicKey = firstAccountKey.getPublicKey();
 
-        System.out.println("private key for first account = " + firstAccountKey);
-        System.out.println("public key for first account = " + firstAccountPublicKey);
+        log.info("Private key for sender account = {}", firstAccountKey);
+        log.info("Public key for sender account = {}", firstAccountPublicKey);
 
         TransactionResponse firstTransactionResponse = new AccountCreateTransaction()
                 // The only _required_ property here is `key`
@@ -50,19 +52,19 @@ public class CreateAndTransferHbarsDemo {
 
         // This will wait for the receipt to become available
         TransactionReceipt firstReceipt = firstTransactionResponse.getReceipt(client);
-        System.out.println("receipt for first account creation = " + firstReceipt);
+        log.info("Receipt for sender account creation = {}", firstReceipt);
 
         AccountId firstAccountId = firstReceipt.accountId;
 
-        System.out.println("first account = " + firstAccountId);
+        log.info("Sender account = {}", firstAccountId);
 
         // First account creation
         // Generate a Ed25519 private, public key pair
         PrivateKey secondAccountKey = PrivateKey.generateED25519();
         PublicKey secondAccountPublicKey = secondAccountKey.getPublicKey();
 
-        System.out.println("private key for second account = " + secondAccountKey);
-        System.out.println("public key for second account = " + secondAccountPublicKey);
+        log.info("Private key for recipient account = {}", secondAccountKey);
+        log.info("Public key for recipient account = {}", secondAccountPublicKey);
 
         TransactionResponse secondTransactionResponse = new AccountCreateTransaction()
                 // The only _required_ property here is `key`
@@ -72,11 +74,11 @@ public class CreateAndTransferHbarsDemo {
 
         // This will wait for the receipt to become available
         TransactionReceipt secondReceipt = secondTransactionResponse.getReceipt(client);
-        System.out.println("receipt for second account creation = " + secondReceipt);
+        log.info("Receipt for recipient account creation = {}", secondReceipt);
 
         AccountId secondAccountId = secondReceipt.accountId;
 
-        System.out.println("second account = " + secondAccountId);
+        log.info("Recipient accountId = {}", secondAccountId);
 
         //Balance queries
 
@@ -90,8 +92,8 @@ public class CreateAndTransferHbarsDemo {
                 .execute(client)
                 .hbars;
 
-        System.out.println("" + firstAccountId + " balance = " + senderBalanceBefore);
-        System.out.println("" + secondAccountId + " balance = " + receiptBalanceBefore);
+        log.info("Sender with id {} has a balance before transfer = {}", firstAccountId, senderBalanceBefore);
+        log.info("Recipient with id {} has a balance before transfer = {}", secondAccountId, receiptBalanceBefore);
 
         Hbar amount = Hbar.fromTinybars(100);
 
@@ -109,11 +111,11 @@ public class CreateAndTransferHbarsDemo {
                 .setTransactionMemo("transfer test")
                 .execute(clientForTransfer);
 
-        System.out.println("transaction ID for transfer: " + transaferTransactionResponse);
+        log.info("Transaction ID for transfer: {}", transaferTransactionResponse);
 
         TransactionRecord record = transaferTransactionResponse.getRecord(client);
 
-        System.out.println("transferred " + amount + "...");
+        log.info("Transferred {} tinybars", amount);
 
         Hbar senderBalanceAfter = new AccountBalanceQuery()
                 .setAccountId(firstAccountId)
@@ -125,8 +127,8 @@ public class CreateAndTransferHbarsDemo {
                 .execute(client)
                 .hbars;
 
-        System.out.println("" + firstAccountId + " balance = " + senderBalanceAfter);
-        System.out.println("" + secondAccountId + " balance = " + receiptBalanceAfter);
-        System.out.println("Transfer memo: " + record.transactionMemo);
+        log.info("Sender account with id {} has a balance after transfer = {}", firstAccountId, senderBalanceAfter);
+        log.info("Recipient account with id {} has a balance after transfer = {}", secondAccountId, receiptBalanceAfter);
+        log.info("Transfer memo: {}", record.transactionMemo);
     }
 }
