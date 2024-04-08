@@ -37,7 +37,7 @@ public class CreateAccountsAndTransferHbarsDemo {
         client.setOperator(OPERATOR_ID, OPERATOR_KEY);
 
         // First account creation
-        // Generate a Ed25519 private, public key pair
+        // Generate an ED25519 private, public key pair
         PrivateKey firstAccountKey = PrivateKey.generateED25519();
         PublicKey firstAccountPublicKey = firstAccountKey.getPublicKey();
 
@@ -58,8 +58,8 @@ public class CreateAccountsAndTransferHbarsDemo {
 
         log.info("Sender account = {}", firstAccountId);
 
-        // First account creation
-        // Generate a Ed25519 private, public key pair
+        // Second account creation
+        // Generate an ED25519 private, public key pair
         PrivateKey secondAccountKey = PrivateKey.generateED25519();
         PublicKey secondAccountPublicKey = secondAccountKey.getPublicKey();
 
@@ -103,7 +103,7 @@ public class CreateAccountsAndTransferHbarsDemo {
         // by this account and be signed by this key
         clientForTransfer.setOperator(firstAccountId, firstAccountKey);
 
-        TransactionResponse transaferTransactionResponse = new TransferTransaction()
+        TransactionResponse transferTransactionResponse = new TransferTransaction()
                 // .addSender and .addRecipient can be called as many times as you want as long as the total sum from
                 // both sides is equivalent
                 .addHbarTransfer(firstAccountId, amount.negated())
@@ -111,9 +111,9 @@ public class CreateAccountsAndTransferHbarsDemo {
                 .setTransactionMemo("transfer test")
                 .execute(clientForTransfer);
 
-        log.info("Transaction ID for transfer: {}", transaferTransactionResponse);
+        log.info("Transaction ID for transfer: {}", transferTransactionResponse);
 
-        TransactionRecord record = transaferTransactionResponse.getRecord(client);
+        TransactionRecord record = transferTransactionResponse.getRecord(client);
 
         log.info("Transferred {} tinybars", amount);
 
